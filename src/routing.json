@@ -1,0 +1,118 @@
+{
+  "name": {
+    "default": {
+      "path": "/"
+    }
+  },
+  "main": {
+    "default": {
+      "path": "/con"
+    },
+    "chat": {
+      "path": "/connection/chat"
+    },
+    "connecting": {
+      "path": "/connection/connecting"
+    },
+    "reconnect": {
+      "path": "/connection/reconnect"
+    },
+    "lawyerConnection": {
+      "path": "/connection/lawyer-connection"
+    }
+  },
+  "app": {
+    "default": {
+      "path": "/app"
+    },
+    "lawyers": {
+      "path": "/app/dziedzina/:slug",
+      "allowPrev": true
+    },
+    "regulations": {
+      "path": "/app/regulations",
+      "allowPrev": true
+    },
+    "payments": {
+      "path": "/app/payments"
+    },
+    "callHistory": {
+      "default": "/app/call-history",
+      "path": "/app/call-history/:callId?"
+    },
+    "messages": {
+      "default": "/app/messages",
+      "path": "/app/messages/:messageId?"
+    },
+    "services": {
+      "default": "/app/services",
+      "path": "/app/services/:serviceId?"
+    },
+    "settlements": {
+      "path": "/app/settlements"
+    }
+  },
+  "userManagement": {
+    "default": {
+      "path": "/auth"
+    },
+    "login": {
+      "path": "/auth/login"
+    },
+    "setPassword": {
+      "path": "/auth/setPassword/:process(registration|forgotPassword)",
+      "default": "/auth/setPassword"
+    },
+    "registration": {
+      "path": "/auth/registration"
+    },
+    "registerToken": {
+      "path": "/auth/register/:token"
+    },
+    "registrationId": {
+      "path": "/auth/registration/:id"
+    },
+    "forgotPassword": {
+      "path": "/auth/forgot-password"
+    },
+    "verifyCode": {
+      "path": "/auth/verify-code/:process(registration|forgotPassword)",
+      "default": "/auth/verify-code"
+    },
+    "authorization": {
+      "path": "/auth/authorization"
+    },
+    "resetPassword": {
+      "path": "/auth/reset-password/:token"
+    }
+  },
+  "internalServerError": {
+    "default": {
+      "path": "/500",
+      "title": "Error 500: Internal server error"
+    }
+  },
+  "underMaintenance": {
+    "default": {
+      "path": "/503",
+      "title": "Error 503: Under Maintenancde"
+    }
+  },
+  "notFound": {
+    "default": {
+      "path": "/404",
+      "title": "Error 404: Subpage not found"
+    }
+  },
+  "technicalError": {
+    "default": {
+      "path": "/error/technical",
+      "title": "Technical error"
+    }
+  },
+  "appLinks": {
+    "default": {
+      "path": "/appLinks"
+    }
+  }
+}
