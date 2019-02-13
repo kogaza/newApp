@@ -1,26 +1,18 @@
-import { Record } from 'immutable';
 import { ChangeValue } from '../../action-types/Home';
-import { AppState } from '../index';
 
-export interface IHomeState {
-    changeValue: string;
-}
+export type HomeState = Object;
 
-export type ChangeValueState = Record<IHomeState>;
+const HomeState = 'test';
 
-const ChangeValueState = Record<IHomeState>({
-    changeValue: '',
-});
-
-const initialState: ChangeValueState = new ChangeValueState();
-
-export default function changeValue(state: ChangeValueState = initialState, action: any) {
+export default function changeValue(state: HomeState = HomeState, action: any) {
     switch (action.type) {
         case ChangeValue.CHANGE_VALUE:
-            return state.set( 'changeValue', action.payload.changeValue );
+            return state = action.payload;
         default:
             return state;
     }
 }
 
-export const getFieldValueFromFormName = (state: AppState) => state.get('home');
+export const getValue = (state: any) => {
+    return state.home;
+};
