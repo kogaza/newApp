@@ -89,25 +89,25 @@
   "internalServerError": {
     "default": {
       "path": "/500",
-      "title": "Error 500: Internal server error"
+      "name": "Error 500: Internal server error"
     }
   },
   "underMaintenance": {
     "default": {
       "path": "/503",
-      "title": "Error 503: Under Maintenancde"
+      "name": "Error 503: Under Maintenancde"
     }
   },
   "notFound": {
     "default": {
       "path": "/404",
-      "title": "Error 404: Subpage not found"
+      "name": "Error 404: Subpage not found"
     }
   },
   "technicalError": {
     "default": {
       "path": "/error/technical",
-      "title": "Technical error"
+      "name": "Technical error"
     }
   },
   "appLinks": {

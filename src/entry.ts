@@ -1,7 +1,7 @@
 import {createBrowserHistory} from 'history';
 import initializeReactApp from './initialize-react-app';
 import initializeRedux from './initialize-redux';
-// import { setValue } from './actions/Home';
+// import { setName } from './actions/Home';
 
 // const { routes } = require('lawpoint-common/config/global/ws.json');
 
@@ -16,7 +16,7 @@ if (appliationRootElement) {
     initializeReactApp(appliationRootElement, history, store)
         .then(() => {
             console.warn('store', store.getState());
-            // store.dispatch(setValue('Ada'));
+            // store.dispatch(setName('Ada'));
         })
         .catch(rejectHandler);
 } else {

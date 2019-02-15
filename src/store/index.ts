@@ -1,4 +1,3 @@
-// import { routerMiddleware } from 'connected-react-router/immutable';
 // import { History } from 'history';
 import {createLogger} from 'redux-logger';
 // import createSagaMiddleware from 'redux-saga';

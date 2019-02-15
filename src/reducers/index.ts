@@ -5,7 +5,11 @@ import home from './Home';
 
 
 export type AppState = {
-    home: ''
+    home: {
+        name: '',
+        surname: '',
+        user: []
+    }
 }
 
 const rootReducers = (history: History) => combineReducers({
